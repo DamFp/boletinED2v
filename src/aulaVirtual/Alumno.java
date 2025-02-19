@@ -45,4 +45,10 @@ public class Alumno extends Usuario {
         return notas.getOrDefault(asignatura, -1);
     }
 
+    @Override
+    public String toString() {
+        return "\nNombre: " + getNombre() + "\n" +
+                "Email: " + getEmail() + "\n";
+    }
+
 }

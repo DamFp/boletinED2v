@@ -32,5 +32,19 @@ public class Main {
         // Mostrar notas de los alumnos
         alumno1.mostrarNotas();
         alumno2.mostrarNotas();
+
+        // Agregar alumnos
+        matematicas.agreagarAlumno(alumno1);
+        matematicas.agreagarAlumno(alumno2);
+        programacion.agreagarAlumno(alumno2);
+
+        // Imprimir alumnos
+        System.out.println();
+        System.out.println("Alumnos de Matematicas: ");
+        System.out.println(matematicas.getAlumnos());
+
+        System.out.println();
+        System.out.println("Alumnos de Programacion: ");
+        System.out.println(programacion.getAlumnos());
     }
 }
